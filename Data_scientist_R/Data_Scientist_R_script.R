@@ -45,6 +45,7 @@ exercise_file$IDENTIFIER[exercise_file$PERCENTAGE == max(exercise_file$PERCENTAG
 # to print the sum of the values in the column NUMBER_TESTED
 sum(exercise_file$NUMBER_TESTED)
 
+## to match to the example output file provided
 #exercise_file$PERCENTAGE <- round(exercise_file$PERCENTAGE, digit=0)
 #exercise_file <- subset(exercise_file, select = -YEAR_PUBLICATION)
 
