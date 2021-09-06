@@ -4,7 +4,7 @@ The [Data_scientist_R](Data_scientist_R) folder contains the R script and the sc
 
 The folder includes:  
 -  &emsp;[starting materials](Data_scientist_R/instruction_materials) provided by the recruitment team  
--  &emsp;[R script](Data_scientist_R/Data_Scientist_R_script.R) for processing the Excel file provided  
+-  &emsp;[R script](Data_scientist_R/Data_Scientist_R_script.R) (R version 3.0.4) for processing the Excel file provided  
 -  &emsp;[output file](Data_scientist_R/Data_Scientist_Exercise_Output_File.xlsx) in Excel format (.xlsx)
 -  &emsp;[console printout screenshot](Data_scientist_R/console_print_out.png)  
 -  &emsp;[knitted R markdown report](Data_scientist_R/Data_Scientist_R_script.docx) in Word format (.docx)
