@@ -53,4 +53,5 @@ A screenshot of the code and the console printout was taken:
 
 
 ## R markdown report
-The R script was knitted into an MS Word document (.docx). This [knitted R markdown report](Data_scientist_R/Data_Scientist_R_script.docx) was made so the R code and the outputs can be read easily, especially for those who only use Word. The report documented the processing code, the dataframe after all processes, and the summary numbers based on the cleaned dataframe.  
+The R script was knitted into an MS Word document (.docx). This [knitted R markdown report](Data_scientist_R/Data_Scientist_R_script.docx) was made so the R code and the outputs can be read easily, especially for those who only use Word. The report documented the processing code, the dataframe after all processes, and the summary numbers based on the cleaned dataframe. 
+
