@@ -1,6 +1,6 @@
 ## set working directory
 # the path can be changed accordingly as user wish
-# the path need to contain the exercise file 'Data_Scientist_Exercise_File.xlsx'
+# but the path has to contain the exercise file 'Data_Scientist_Exercise_File.xlsx'
 setwd("~/Desktop/Data_scientist_R/instruction_materials")
 
 ## load library and read in the Excel file
