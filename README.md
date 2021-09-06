@@ -3,10 +3,10 @@
 The [Data_scientist_R](Data_scientist_R) folder contains the R script and the script outputs required by the data scientist programmer recruitment exercise (job reference: 1512). 
 
 The folder includes:  
--  &emsp;[starting materials](Data_scientist_R/instruction_materials) provided by the recriutment team  
+-  &emsp;[starting materials](Data_scientist_R/instruction_materials) provided by the recruitment team  
 -  &emsp;[R script](Data_scientist_R/Data_Scientist_R_script.R) for processing the Excel file provided  
 -  &emsp;[output file](Data_scientist_R/Data_Scientist_Exercise_Output_File.xlsx) in Excel format (.xlsx)
--  &emsp;[console print out screenshot](Data_scientist_R/console_print_out.png)  
+-  &emsp;[console printout screenshot](Data_scientist_R/console_print_out.png)  
 -  &emsp;[knitted R markdown report](Data_scientist_R/Data_Scientist_R_script.docx) in Word format (.docx)
 
 
@@ -23,13 +23,13 @@ The [R script](Data_scientist_R/Data_Scientist_R_script.R) was written as reques
 > 7.	&emsp;output the dataframe to an Excel File called [Data_Scientist_Exercise_Output_File.xlsx](Data_scientist_R/Data_Scientist_Exercise_Output_File.xlsx)
 
 &emsp;  
-\***Note:** The [example output excel file](Data_scientist_R/instruction_materials/Data_Scientist_Exercise_Output_File.xlsx) given by the recriutment team is slightly different to the output here. The differences include:  
+\***Note:** The [example output excel file](Data_scientist_R/instruction_materials/Data_Scientist_Exercise_Output_File.xlsx) given by the recruitment team is slightly different to the output here. The differences include:  
 1. &emsp;The example output contained a mistake when filtering the `YEAR_PUBLICATION` column.
-2. &emsp;The example output removed the `YEAR_PUBLICATION` column. If this column is not wanted, following R code can be used: 
+2. &emsp;The example output removed the `YEAR_PUBLICATION` column. If this column is not wanted, the following R code can be used: 
 ```
 exercise_file <- subset(exercise_file, select = -YEAR_PUBLICATION)
 ``` 
-3. &emsp;The example output file rounded the `PERCENTAGE` column to interger. If interger is wanted, following R code can be used:
+3. &emsp;The example output file rounded the `PERCENTAGE` column to integer. If integer is wanted, the following R code can be used:
 ```
 exercise_file$PERCENTAGE <- round(exercise_file$PERCENTAGE, digit=0)
 ```
@@ -46,9 +46,9 @@ For the following tasks:
 > 1.	&emsp;The `IDENTIFIER` column value with the highest value in the `PERCENTAGE` column
 > 2.	&emsp;The sum of the values in the column `NUMBER_TESTED`
 
-A screenshot of the code and the console print out was taken:  
+A screenshot of the code and the console printout was taken:  
 
-![console print out](./Data_scientist_R/console_print_out.png)
+![console printout](./Data_scientist_R/console_print_out.png)
 
 
 
