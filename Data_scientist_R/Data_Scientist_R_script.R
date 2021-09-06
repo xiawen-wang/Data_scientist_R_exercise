@@ -3,7 +3,7 @@
 # but the path has to contain the exercise file 'Data_Scientist_Exercise_File.xlsx'
 setwd("~/Desktop/Data_scientist_R/instruction_materials")
 
-## load library and read in the Excel file
+## load library "openxlsx" (v4.2.4) and read in the Excel file
 library("openxlsx")
 # read the excel file, use the first row as header and do not skip empty rows
 exercise_file <- read.xlsx(xlsxFile = "Data_Scientist_Exercise_File.xlsx", sheet = 1, skipEmptyRows = FALSE)
@@ -24,7 +24,7 @@ exercise_file <- exercise_file[ , c(1, 2, 5, 6, 7, 3, 4)]
 new_order <- c('IDENTIFIER', 'YEAR_PUBLICATION', 'NUMBER_POSITIVE', 'NUMBER_TESTED', 'PERCENTAGE', 'STATE', 'DISEASE')
 exercise_file <- exercise_file[ , new_order]  
 
-## load library and split the IDENTIFIER column 
+## load library "tidyr" (v1.1.3) and split the IDENTIFIER column 
 library("tidyr")
 # use comma that precedening with space and a number (regex: ',\\s[0-9]') as separator 
 # make a new column AUTHOR to hold the new separated information
@@ -34,7 +34,7 @@ exercise_file <- separate(exercise_file, IDENTIFIER, into = c('AUTHOR'), sep = '
 ## To check the result table
 print(exercise_file)
 
-## load library and write the dataframe into an excel file
+## load library "writexl" (v1.4.0) and write the dataframe into an excel file
 library("writexl")
 # column names are kept, centered and bold by default in the output excel file  
 write_xlsx(exercise_file, "~/Desktop/Data_scientist_R/Data_Scientist_Exercise_Output_File.xlsx")
