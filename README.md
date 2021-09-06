@@ -4,7 +4,7 @@ The [Data_scientist_R](Data_scientist_R) folder contains the R script and the sc
 
 The folder includes:  
 -  &emsp;[starting materials](Data_scientist_R/instruction_materials) provided by the recruitment team  
--  &emsp;[R script](Data_scientist_R/Data_Scientist_R_script.R) (R version 3.0.4) for processing the Excel file provided  
+-  &emsp;[R script](Data_scientist_R/Data_Scientist_R_script.R) (R version 4.0.3) for processing the Excel file provided  
 -  &emsp;[output file](Data_scientist_R/Data_Scientist_Exercise_Output_File.xlsx) in Excel format (.xlsx)
 -  &emsp;[console printout screenshot](Data_scientist_R/console_print_out.png)  
 -  &emsp;[knitted R markdown report](Data_scientist_R/Data_Scientist_R_script.docx) in Word format (.docx)
@@ -22,8 +22,16 @@ The [R script](Data_scientist_R/Data_Scientist_R_script.R) was written as reques
 > 6.	&emsp;split the `IDENTIFIER` column and create a new column called `AUTHOR` which does not contain the date, but just the text. Still keep the `IDENTIFIER` column.
 > 7.	&emsp;output the dataframe to an Excel File called [Data_Scientist_Exercise_Output_File.xlsx](Data_scientist_R/Data_Scientist_Exercise_Output_File.xlsx)
 
-&emsp;  
-\***Note:** The [example output excel file](Data_scientist_R/instruction_materials/Data_Scientist_Exercise_Output_File.xlsx) given by the recruitment team is slightly different to the output here. The differences include:  
+**R packages** used:
+```
+openxlsx (version 4.2.4)
+tidyr (version 1.1.3)
+writexl (version 1.4.0)
+```
+
+### \***Note:** 
+
+The [example output Excel file](Data_scientist_R/instruction_materials/Data_Scientist_Exercise_Output_File.xlsx) given by the recruitment team is slightly different to the [output Excel file](Data_scientist_R/Data_Scientist_Exercise_Output_File.xlsx) here. The differences include:  
 1. &emsp;The example output contained a mistake when filtering the `YEAR_PUBLICATION` column.
 2. &emsp;The example output removed the `YEAR_PUBLICATION` column. If this column is not wanted, the following R code can be used: 
 ```
@@ -37,7 +45,7 @@ exercise_file$PERCENTAGE <- round(exercise_file$PERCENTAGE, digit=0)
 
 **( The above code can also be found in the [R script](Data_scientist_R/Data_Scientist_R_script.R) in the comments as extra. )**
 
-
+&emsp;  
 
 ## Summary numbers
 For the following tasks: 
@@ -50,7 +58,7 @@ A screenshot of the code and the console printout was taken:
 
 ![console printout](./Data_scientist_R/console_print_out.png)
 
-
+&emsp;  
 
 ## R markdown report
 The R script was knitted into an MS Word document (.docx). This [knitted R markdown report](Data_scientist_R/Data_Scientist_R_script.docx) was made so the R code and the outputs can be read easily, especially for those who only use Word. The report documented the processing code, the dataframe after all processes, and the summary numbers based on the cleaned dataframe. 
