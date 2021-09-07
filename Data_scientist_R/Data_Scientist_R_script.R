@@ -39,11 +39,13 @@ library("writexl")
 # column names are kept, centered and bold by default in the output excel file  
 write_xlsx(exercise_file, "~/Desktop/Data_scientist_R/Data_Scientist_Exercise_Output_File.xlsx")
 
+## Summary numbers
 # to print the IDENTIFIER column value with the highest value in the PERCENTAGE column
 exercise_file$IDENTIFIER[exercise_file$PERCENTAGE == max(exercise_file$PERCENTAGE)]
 
 # to print the sum of the values in the column NUMBER_TESTED
 sum(exercise_file$NUMBER_TESTED)
+
 
 ###### EXTRA CODE ######
 ## to match to the example output file provided
