@@ -39,9 +39,9 @@ exercise_file <- subset(exercise_file, select = -YEAR_PUBLICATION)
 ``` 
 3. &emsp;The example output file rounded the `PERCENTAGE` column to integer. If integer is wanted, the following R code can be used:
 ```
-exercise_file$PERCENTAGE <- round(exercise_file$PERCENTAGE, digit=0)
+exercise_file$PERCENTAGE <- round(exercise_file$PERCENTAGE, digit = 0)
 ```
-&emsp;&emsp;If more significance figures are desired, simply change the `digit=0`.  
+&emsp;&emsp;If more significance figures are desired, simply change the `digit = 0`.  
 
 **( The above code can also be found in the [R script](Data_scientist_R/Data_Scientist_R_script.R) in the comments as extra. )**
 
