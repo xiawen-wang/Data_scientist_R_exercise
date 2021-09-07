@@ -29,26 +29,26 @@ library("tidyr")
 # use comma that precedening with space and a number (regex: ',\\s[0-9]') as separator 
 # make a new column AUTHOR to hold the new separated information
 # keep the IDENTIFIER column
-exercise_file <- separate(exercise_file, IDENTIFIER, into = c('AUTHOR'), sep = ',\\s[0-9]', remove = FALSE, extra = "drop")
+# output into a sheet called exercise_output_file
+exercise_output_file <- separate(exercise_file, IDENTIFIER, into = c('AUTHOR'), sep = ',\\s[0-9]', remove = FALSE, extra = "drop")
 
 ## To check the result table
-print(exercise_file)
+print(exercise_output_file)
 
 ## load library "writexl" (v1.4.0) and write the dataframe into an excel file
 library("writexl")
 # column names are kept, centered and bold by default in the output excel file  
-write_xlsx(exercise_file, "~/Desktop/Data_scientist_R/Data_Scientist_Exercise_Output_File.xlsx")
+write_xlsx(exercise_output_file, "~/Desktop/Data_scientist_R/Data_Scientist_Exercise_Output_File.xlsx")
 
 ## Summary numbers
 # to print the IDENTIFIER column value with the highest value in the PERCENTAGE column
-exercise_file$IDENTIFIER[exercise_file$PERCENTAGE == max(exercise_file$PERCENTAGE)]
+exercise_output_file$IDENTIFIER[exercise_output_file$PERCENTAGE == max(exercise_output_file$PERCENTAGE)]
 
 # to print the sum of the values in the column NUMBER_TESTED
-sum(exercise_file$NUMBER_TESTED)
-
+sum(exercise_output_file$NUMBER_TESTED)
 
 ###### EXTRA CODE ######
 ## to match to the example output file provided
-#exercise_file$PERCENTAGE <- round(exercise_file$PERCENTAGE, digit=0)
-#exercise_file <- subset(exercise_file, select = -YEAR_PUBLICATION)
+#exercise_output_file$PERCENTAGE <- round(exercise_output_file$PERCENTAGE, digit=0)
+#exercise_output_file <- subset(exercise_output_file, select = -YEAR_PUBLICATION)
 
