@@ -35,11 +35,11 @@ The [example output Excel file](Data_scientist_R/instruction_materials/Data_Scie
 1. &emsp;The example output contained a mistake when filtering the `YEAR_PUBLICATION` column.
 2. &emsp;The example output removed the `YEAR_PUBLICATION` column. If this column is not wanted, the following R code can be used: 
 ```
-exercise_file <- subset(exercise_file, select = -YEAR_PUBLICATION)
+exercise_output_file <- subset(exercise_output_file, select = -YEAR_PUBLICATION)
 ``` 
 3. &emsp;The example output file rounded the `PERCENTAGE` column to integer. If integer is wanted, the following R code can be used:
 ```
-exercise_file$PERCENTAGE <- round(exercise_file$PERCENTAGE, digit = 0)
+exercise_output_file$PERCENTAGE <- round(exercise_output_file$PERCENTAGE, digit = 0)
 ```
 &emsp;&emsp;If more significance figures are desired, simply change the `digit = 0`.  
 
